@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Bungee|Sarala|Sedgwick+Ave+Display|Tangerine" rel="stylesheet">
+        <title>India Spice</title>
+        <style>
+        
+        /*--------------------Top---------------------------*/
+           body{
+                background-image: url(images/background.jpg);
+           }
+           header{
+                margin: 50px 0;
+           }
+           nav{
+    			width: 100%;
+    			display: flex; /*set as a flex container*/
+    			flex-direction: column; /*mobile first approach*/
+    			border-radius: 10px;
+    			list-style-type: none; /*Remove Bullets*/
+    			padding: 0;	
+		   }
+          
+           a{
+    			text-decoration: none; 
+    			flex:1;		
+    			font-family: roboto;
+    			padding:20px;
+    			text-align: center;
+    			font-size: 40px;
+    			border-bottom:1px solid white;
+            }
+           
+           /*-----------------Middle--------------------------*/
+           
+           #middle{
+               display: flex;
+               flex-direction:column;
+               justify-content:space-around;
+               
+           }
+           video{
+               text-align: center;
+               font-family: Dosis;
+               margin:50px 20px;
+               background-color: #d9d9d9;
+               padding: 10px;
+               
+           }
+           p{
+               margin: 0 20px;
+               /*font-family: 'Sarala', sans-serif;*/
+               font-family: 'Tangerine', cursive;
+               font-size: 30px;
+               
+           }
+           
+           
+           /*--------------------Bottom-------------------------*/
+           
+           footer {
+               display: flex;
+               flex-direction:column;
+               justify-content:space-around;
+               
+           }
+           
+          .card{
+               text-align: center;
+               font-family: Dosis;
+               margin:50px 20px;
+               background-color: #d9d9d9;
+               padding: 10px;
+          }
+		  .card img{
+			   width:100%;
+		  }
+		  h2{
+		       margin: 10px 0;
+		       font-family: 'Sarala', sans-serif;
+		       font-size: 30px;
+		  }
+		  
+		   fieldset{
+		        margin-left: auto;
+		        margin-right: auto;
+                width: 450px;
+                border: 2px solid #999;
+                border-radius: 20px;
+                clear: both;
+                padding: 20px;
+                margin-bottom: 10px;
+                background-color:rgba(129, 187, 201,.2);
+		   }
+		   label.field{
+                display: block;
+                text-align: right;
+                width: 100px;
+                float: left;
+                clear: both;
+		   }
+		   input{
+                width: 200px;
+                border-radius: 5px;
+                padding: 6px 8px;
+                margin: 10px;
+           }
+           input:focus{
+                background-color: #11CC11;
+           }
+           .field{
+            padding: 6px 8px;
+           }
+           
+           /*------------------Desktop-----------------------------*/
+           
+          @media screen and (min-width: 700px){
+              nav{
+                  height: 200px;
+				  width: 90%;
+				  flex-flow: row;/* across screen for dexktop screen size*/
+				  align-items: center;
+				  flex: 1;
+				  justify-content: center;
+			  }
+			  a{
+			      border: none;
+			  }
+			  #header{
+			      flex: 5;
+			      font-size: 90px;
+			      
+			  }
+			  #pagedown:hover{
+			      background-image: url(images/logo.png);
+			      background-size: cover;
+			      width: 150px;
+			      height: 150px;
+			      
+			  }
+			  /*--------------------------------------------------*/
+			  #middle{
+			      flex-flow: row;
+			      justify-content: center;
+			      margin: 10px;
+			      padding: none;
+			      align-items: center;
+			  }
+			  
+			  #middle video{
+			      flex: 1.25;
+			  }
+			  
+			  #middle p{
+			      flex: 1;
+			  }
+			  #middle p:hover{
+			      color: white;
+			      background-color:black;
+			      font-family: 'Sarala', sans-serif;
+			      font-size: 20px;
+			  }
+			  /*----------------------------------------------------*/
+			  
+			  .card:hover{
+			      transform: scale(1.2,1.2);
+			      border: 5px solid black;
+			  }
+			  footer{
+			      flex-flow: row;
+			      vertical-align:top;
+			      justify-content:center;
+              }
+              .card{
+                  flex:1;
+              }
+              
+          }
+           
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+		        <a id="logo"><img src="images/logo.png" alt="logo" width="200px" height="200px"></a>
+        		<a id="header">Indian Spice</a>
+        		<div><a id="pagedown" href="#Bot">Footer</a>
+        		     <a href=#>Menu</a>
+        		     <a href=#>Contacts</a>
+        		</div>
+            </nav>        
+        </header>
+        <div id="middle">
+            <video controls="controls" width="400" 
+                preload="metadata" autoplay muted>
+                <source src="videos/video.mp4#t=30,60" type="video/mp4" >
+                <!--<track src="videos/sub.vtt" kind="subtitles" -->
+                <!--default srclang="en" label="English">-->
+                
+            </video>
+            <p>
+                Finished off with tender chunks of chicken or fish,
+                lovely seasonal veggies, or simply served on its own
+                with paratha or naan bread for dunking (or poured over
+                chips if you’re being really naughty!), curry sauce can
+                be taken in plenty of delicious directions.
+
+                This tikka masala sauce is a brilliant recipe to master
+                as it’s such a crowd-pleaser. With a spiced, creamy coconut
+                and tomato base, it’s a good one to make if you’ve got a mixture
+                of vegetarians and meat-eaters coming over for dinner. You just
+                need to make up a double, or triple batch and serve with either
+                chicken, fish or vegetables. This recipe makes enough for 6 to 8
+                people, so freeze any leftovers for a quick curry another night.
+                
+                
+                
+            </p>
+        </div>
+        <footer id="Bot">
+            <div class="card">
+                <img src="images/curry.jpg" alt="curry" width="400">
+    		    <h2>Curry</h2>
+    		    <p>Curry (/ˈkʌri/, plural curries) is an umbrella term
+    		         referring to a number of dishes originating in the
+    		         cuisine of the Indian subcontinent. The common 
+    		         feature is the use of complex combinations of spices
+    		         or herbs, usually including fresh or dried hot chillies.
+    		         The use of the term is generally limited to dishes prepared
+    		         in a sauce.[1] Curry dishes prepared in the southern states
+    		         of India may be spiced with leaves from the curry tree.</p>
+		    </div>
+		    <div class="card">
+                <img src="images/spices.jpg" alt="right" width="400">
+    		    <h2>Spices</h2>
+    		    <p>A spice is a seed, fruit, root, bark, or other plant
+    		        substance primarily used for flavoring, coloring or
+    		        preserving food. Spices are distinguished from herbs,
+    		        which are the leaves, flowers, or stems of plants used
+    		        for flavoring or as a garnish. Many spices have antimicrobial
+    		        properties.
+    		        </p>
+		    </div>
+		     <div class="card">
+                <img src="images/spices.jpg" alt="right" width="400">
+    		    <h2>Spices</h2>
+    		    <p>A spice is a seed, fruit, root, bark, or other plant
+    		        substance primarily used for flavoring, coloring or
+    		        preserving food. Spices are distinguished from herbs,
+    		        which are the leaves, flowers, or stems of plants used
+    		        for flavoring or as a garnish. Many spices have antimicrobial
+    		        properties.
+    		        </p>
+		    </div> 
+        </footer>
+        <form id="UserRegForm" action="server_side_script.php" method="post">
+            <fieldset>
+                   <legend>Contact Form</legend>
+                   
+                   <label for="fname" class="field">
+                   Firstname:</label><input type="text" id="fname"
+                   placeholder="first name" name="fname" autocomplete="on"
+                   required/>
+                   
+                   <label for="email" class="field">
+                   Email:</label><input id="email" type="email" name="email"
+                   placeholder="enter email" required autofocus/>
+                   
+                   <label for="telephone" class="field">
+                   Telephone:</label><input id="telephone" type="text" name="telephone"
+                   placeholder="telephone number" pattern="08[3-9]{1}[0-9]{7}"/>
+                   
+                   <label for="date_reser" class="field">
+                   Date of Reservation:</label><input id="date_reser" type="date" name="date_reser"
+                   placeholder="date of reservation"/>
+            </fieldset>       
+
+            <fieldset>
+                    <input class="browsers" list="browsers">
+                        <label for="date_reser" class="field">Number of Customers:</label>
+                        <datalist id="browsers">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">        
+                        </datalist>
+                    <label for="label" class="field">
+                   </label><input id="label" type="submit" name="label" value="submit"/>
+                </fieldset>
+            
+            
+            
+        </form>
+    </body>
+</html>

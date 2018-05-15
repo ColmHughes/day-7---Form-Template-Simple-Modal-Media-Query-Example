@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="UTF-8">
+      <title>Form</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   
+      <!--
+         Form with HTML5 tags and basic CSS
+      -->
+      <style type="text/css">
+
+      body{
+         font-family: 'Roboto', sans-serif;
+         background-color: #552244;
+      }
+         #container{
+            width: 500px;
+            margin: auto;
+            background-color: #991133;
+            padding: 20px;
+        
+         }
+
+         legend{
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         }
+            
+         label.field{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+            clear: both;
+
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+            margin: 10px;
+           
+         }
+         input:focus{
+             background-color: #11CC11;
+         }
+         .field{
+            padding: 6px 8px;
+         }
+
+         #currency{
+             width: 220px;
+             border-radius: 5px;
+             padding: 6px 8px;
+         }
+
+         /*fieldset{*/
+         /*   width: 450px;*/
+         /*   border: 1px solid #999;*/
+         /*   border-radius: 20px;*/
+         /*   clear: both;*/
+         /*   padding: 20px;*/
+         /*   margin-bottom: 10px;*/
+         /*   background-color:rgba(129, 187, 201,.2);*/
+
+         /*}*/
+         #myRange{
+             width: 90%;
+         }
+         .browsers{
+             width: 90%;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+           <form id="UserRegForm" action="server_side_script.php" method="post">
+               <fieldset>
+                   <legend>Registration</legend>
+                   
+                   <label for="fname" class="field">
+                   Firstname:</label><input type="text" id="fname"
+                   placeholder="first name" name="fname" autocomplete="on"
+                   required/>
+                   
+                   <label for="password" class="field">
+                   Password:</label><input id="password" name="password" type="password"
+                   placeholder="enter password"/>*
+                   
+                   <label for="email" class="field">
+                   Email:</label><input id="email" type="email" name="email"
+                   placeholder="enter email" required autofocus/>
+                   
+                   <label for="website" class="field">
+                   Website:</label><input id="website" type="url" name="website"
+                   placeholder="website url"/>
+                   
+                   <label for="telephone" class="field">
+                   Telephone:</label><input id="telephone" type="text" name="telephone"
+                   placeholder="telephone number" pattern="[0-9]{7}[A-Z]{1}"/>
+                   
+                   <label for="mobile" class="field">
+                   Mobile:</label><input id="mobile" type="text" name="mobile"
+                   placeholder="mobile number" pattern="08[3-9]{1}[0-9]{7}"
+                   title="08 followed by 3-9, then a 7 digit mobile number"/>
+                   
+                   <label for="passport" class="field">
+                   Passport Number:</label><input id="passport" type="text" name="passport"
+                   placeholder="passport number" pattern="[0-9]{7}[A-Z]{1}"
+                   title="7 digits followed by a capital letter"/>
+                   
+                   <label for="creditcard" class="field">
+                   Passport Number:</label><input id="creditcard" type="text" name="creditcard"
+                   placeholder="creditcard number" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                   title="4 letters - 4 letters - 4 letters - 4 letters"/>
+                   
+                   <label for="color" class="field">
+                   Color:</label><input id="color" type="color" name="color"
+                   placeholder="color"/>
+                   
+                   <label for="label" class="field">
+                   </label><input id="label" type="submit" name="label" value="submit"/>
+                </fieldset>
+                
+                <fieldset>
+                    <label><input type="checkbox" name="menu" value="Starter">Starter</label>
+                    <label><input type="checkbox" name="menu" value="Main">Main</label>
+                    <label><input type="checkbox" name="menu" value="Dessert">Dessert</label>
+                </fieldset>
+                
+                <fieldset>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </fieldset>
+                
+                <fieldset>
+                    <select name="elements" class="browsers">
+                        <option value="sun">Sun</option>
+                        <option value="earth">Earth</option>
+                        <option value="fire">Fire</option>
+                        <option value="water">Water</option>
+                    </select>
+                </fieldset>
+                
+                <fieldset>
+                    <input class="browsers" list="browsers">
+                        <datalist id="browsers">
+                            <option value="Internet Explorer">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                </fieldset>
+                
+                <fieldset class="slidecontainer">
+                    <input type="range" min="1" max="11" value="50" class="slider" id="myRange">
+                </fieldset>
+                
+           </form> 
+      </div>
+   </body>
+
+</html>
